@@ -1,0 +1,366 @@
+/* Se le da el formato al cuerpo */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Se pone un gradiente de fondo */
+.fondo {
+    font-family: "Open Sans", Arial;
+    background: linear-gradient(to right, #1cd8d2, #93edc7);
+}
+/* Formato al link en modo link */
+a:link {
+    text-decoration: none;
+}
+/* Formato al link en modo hover */
+a:hover {
+    color: #ffffff;
+}
+/* Formato al menu de navegacion */
+.menunav {
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Formato al contenedor de dos botones */
+.contenedor {
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Gira un boton */
+.textoVerticalIzq {
+    transform: rotate(90deg);
+    transform-origin: left top 1;
+}
+/* Gira un boton */
+.textoVerticalDer {
+    transform: rotate(-90deg);
+    transform-origin: left top 1;
+}
+/* Se agrega formato al boton de menu */
+.botonMenu {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 142px;
+    color: #fafafa;
+    background: rgba(145, 145, 145, 0.3);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 9px;
+    cursor: pointer;
+    /* border: 1px #ffffff solid; */
+}
+/* Boton de menu en modo hover */
+.botonMenu:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px #919191;
+    background: #919191;
+    cursor: pointer;
+}
+/* Formato link dentro de h1 */
+h1 a {
+    color: #f5f5f5;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: verdana;
+    cursor: pointer;
+}
+/* Efecto componente h1 */
+h1 {
+    transition: transform 0.2s ease;
+}
+/* Hover h1 */
+h1:hover {
+    transform: scale(1.2);
+}
+/* Titulo main */
+.inicial {
+    z-index: 4;
+    margin-top: -5px;
+    font-size: 70px;
+    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+        1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+        1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+        1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+/* Titulo en otras paginas */
+.titulo {
+    position: absolute;
+    z-index: 3;
+    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+        1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+        1px 7px 1px #919191, 1px 13px 6px rgba(16, 16, 16, 0.4),
+        1px 15px 10px rgba(16, 16, 16, 0.2), 1px 18px 35px rgba(16, 16, 16, 0.2),
+        1px 23px 60px rgba(16, 16, 16, 0.4);
+}
+/* Formato logo */
+.logo {
+    top: 0;
+    left: 0;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+/* Formato creditos */
+.creditos {
+    font-size: 25px;
+    top: 0;
+    right: 0;
+    margin-right: 80px;
+    margin-top: 60px;
+}
+/* Formato contenedor contenido otras paginas */
+.contenedor2 {
+    height: auto;
+    width: 800px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: #fafafa;
+    border-radius: 9px;
+    z-index: 4;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+/* Formato h2 */
+h2 {
+    color: #3d3d3d;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+/* Formato para texto con imagen */
+.textoImg {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Formato para texto */
+.uno {
+    width: 360px;
+    font-size: 16px;
+    text-align: justify;
+    color: #3d3d3d;
+    margin: 10px 10px 20px 20px;
+}
+/* Formato para imagen detro de texto */
+.uno img {
+    width: 350px;
+    transition: transform 0.2s ease;
+}
+/* Efecto en modo hover */
+.uno:hover img {
+    transform: scale(1.3);
+}
+/* Formato scroll para texto extenso */
+.scroll {
+    margin-bottom: 30px;
+    height: 350px;
+    overflow-x: hidden;
+    overflow-x: auto;
+}
+/* Formato texto con imagen */
+.historia img {
+    width: 350px;
+    margin: 0px 10px 0px 20px;
+}
+/* Formato para lista */
+.lista {
+    width: 350px;
+    font-size: 16px;
+    text-align: justify;
+    color: #3d3d3d;
+    margin: 10px 10px 20px 20px;
+}
+/* Formato para video de youtube */
+iframe {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+/* Formato para texto de creditos */
+.textoCreditos {
+    width: 100%;
+    font-size: 16px;
+    color: #3d3d3d;
+    margin: 0px;
+    margin-top: -10px;
+}
+/* Formato para span dentro de lista */
+li span {
+    font-weight: bold;
+}
+/* Formato para link dentro de lista */
+li a {
+    color: #3d3d3d;
+}
+/* Formato hover para link dentro de lista */
+li a:hover {
+    color: #1cd8d2;
+}
+/* Formato para titulo autor */
+.autor {
+    margin-top: -20px;
+}
+/* Media queries para responsive */
+@media only screen and (max-width: 700px) {
+    .contenedor2 {
+        width: 300px;
+    }
+    .uno {
+        width: 100%;
+    }
+    .uno img {
+        width: 100%;
+    }
+    .uno:hover img {
+        transform: scale(1);
+    }
+    .historia img {
+        width: 90%;
+    }
+    .lista {
+        width: 90%;
+    }
+    iframe {
+        width: 90%;
+    }
+    .creditos {
+        font-size: 15px;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .inicial {
+        font-size: 40px;
+    }
+    .scroll {
+        height: 260px;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+    .contenedor2 {
+        width: 400px;
+    }
+    .uno {
+        width: 100%;
+    }
+    .uno img {
+        width: 100%;
+    }
+    .uno:hover img {
+        transform: scale(1);
+    }
+    .historia img {
+        width: 90%;
+    }
+    .lista {
+        width: 90%;
+    }
+    iframe {
+        width: 90%;
+    }
+    .creditos {
+        font-size: 20px;
+    }
+    .logo {
+        font-size: 25px;
+    }
+    .inicial {
+        font-size: 60px;
+    }
+    .scroll {
+        height: 270px;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+    .contenedor2 {
+        width: 450px;
+    }
+    .uno {
+        width: 100%;
+    }
+    .uno img {
+        width: 100%;
+    }
+    .uno:hover img {
+        transform: scale(1);
+    }
+    .historia img {
+        width: 90%;
+    }
+    .lista {
+        width: 90%;
+    }
+    iframe {
+        width: 90%;
+    }
+    .scroll {
+        height: 290px;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+    .contenedor2 {
+        width: 550px;
+    }
+    .uno {
+        width: 100%;
+    }
+    .uno img {
+        width: 100%;
+    }
+    .uno:hover img {
+        transform: scale(1);
+    }
+    .historia img {
+        width: 90%;
+    }
+    .lista {
+        width: 90%;
+    }
+    iframe {
+        width: 90%;
+    }
+    .scroll {
+        height: 310px;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1150px) {
+    .contenedor2 {
+        width: 650px;
+    }
+    .uno {
+        width: 45%;
+    }
+    .uno img {
+        width: 100%;
+    }
+    .historia img {
+        width: 280px;
+    }
+    .lista {
+        width: 290px;
+    }
+    .scroll {
+        height: 330px;
+    }
+}
